@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<!-- have a menu bar which sends to each specific section depending on which one they click -->
+
+<head>
+    <title>Personal Website | Nigel Phan</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <section class="header">
+        <h1>Hi there, I'm Nigel Phan </h1>
+        <p>Welcome to my personal website</p>
+
+    </section>
+    <div id="navbar">
+        <a href="#about">About</a>
+        <a href="#experience">Academic Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div id="about-content">
+            <h1 style="font-size: 35px;">About Me</h1>
+            <!-- 
+                TODO:
+                -About me title
+                -INSERT button to expand about me description
+             -->
+            <p>
+                I am a recent AUT Graduate who completed a Bachelors in Computer and Information Science in early
+                2021.
+                I am currently undertaking a
+                Certificate in Technology Product Development Essentials with MissionReadyHQ which is a course
+                designed
+                to teach and learn all the
+                tools needed to become a full stack web developer. As this is an area of interest, I decided to take
+                this course as it
+                would help me gain and refine web based skills which I otherwise knew or had little to no knowledge
+                of
+                during university.
+
+            </p>
+
+            <!-- 
+                TODO:
+                -About this website title
+                -INSERT button to expand about me description
+             -->
+            <br>
+            <h1>About this Website</h1>
+            <p>This website started out as a "mission" to build a website using only HTML and CSS and has since been
+                expanded on over time. More technologies were used progressively with the the aim to make use of
+                tools taught in class by applying them. Since then, this website has become my personal page and
+                ongoing
+                project showcasing my growth and progression as a web developer.</p>
+
+            <!-- Interests section - may remove -->
+            <!-- <p>Outside of work I enjoy gaming with my friends and do indoor rock climbing, bouldering on a
+                semi-regular
+                basis.</p> -->
+            <button type="button" class="collapsable">
+                <p>About this Website</p>
+            </button>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+        <div class="section-title" style="background-color: gainsboro;">
+            <h1>Academic Experience</h1>
+        </div>
+        <!-- LEFT SIDE - BLURB -->
+        <div id="experience-description">
+            <h1>My Experience</h1>
+            <p>During my time as a student at AUT, I took part in many group assigned projects where I primarily had
+                the role of being leader.
+                I learned many valuable project and team management skills which helped me become a capable and
+                reliable leader in any
+                group I was associated with.
+            </p>
+            <p>On top of the business and social side of software development, I gained multiple skills and have
+                been exposed to different
+                technologies used for programming, web applications and game creation.
+            </p>
+        </div>
+
+        <!-- RIGHT SIDE - SKILLS -->
+        <div id="experience-skills">
+            <div id="experience-skills-content">
+                <h1 style="text-decoration: underline;">Skills</h1>
+                <p>These are the tools I have used and have had gained experience using during study.</p>
+
+            </div>
+
+            <!-- PROGRAMMING -->
+            <div class="icon-container">
+                <h2>Programming</h2>
+                <div class="icon-box">
+                    <img src="https://img.icons8.com/color/50/000000/c-programming.png" />
+                    <p>C</p>
+                </div>
+                <div class="icon-box">
+                    <img src="https://img.icons8.com/color/50/000000/c-plus-plus-logo.png" />
+                    <p>C++</p>
+                </div>
+                <div class="icon-box">
+                    <i class="fab fa-java fa-3x" style="color: #f89820;"></i>
+                    <p>Java</p>
+                </div>
+            </div>
+
+            <!-- WEB DEV -->
+            <div class="icon-container">
+                <h2>Web Development</h2>
+                <div class="icon-box">
+                    <i class="fab fa-html5 fa-3x" style="color: #e34c26;"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="icon-box">
+                    <i class="fab fa-css3-alt fa-3x" style="color: #264de4;"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="icon-box">
+                    <i class="fab fa-js fa-3x" style="color: #f0db4f; background-color: black   ;"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="icon-box">
+                    <i class="fab fa-react fa-3x" style="color: #61DBFB;"></i>
+                    <p>ReactJS</p>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-database fa-3x" style="color: black;"></i>
+                    <p>SQL</p>
+                </div>
+                <div class="icon-box">
+                    <i class="fab fa-php fa-3x" style="color: #8993be;"></i>
+                    <p>PHP</p>
+                </div>
+            </div>
+
+            <!-- OTHER -->
+            <div class="icon-container">
+                <h2>Others</h2>
+                <div class="icon-box">
+                    <i class="fab fa-unity fa-3x" style="color: black;"></i>
+                    <p>Unity</p>
+                </div>
+                <div class="icon-box">
+                    <i class="fab fa-trello fa-3x" style="color: #0079BF;"></i>
+                    <p>Trello</p>
+                </div>
+            </div>
+        </div>
+        <div id="experience-notable">
+            <h2>Notable Experience</h2>
+            <div id="experience-notable-content">
+
+                <h3>We are Us Practitioner Website</h3>
+                <p>As part of my final year Research and Development (R&D) project at AUT,
+                    I worked in a group of four to develop a health practitioner website
+                    for an external client outside of AUT who was looking to start up their
+                    own business in the health practitioner industry. </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education">
+        <div class="section-title" style="background-color: whitesmoke;">
+            <h1>Education</h1>
+        </div>
+
+        <!-- AUT -->
+        <div class="education-sub-section">
+            <img src="img/aut.jpg">
+            <p>Auckland University of Technology (AUT)</p>
+            <p>Bachelors Degree in Computer and Information Sciences (BCIS)</p>
+            <p>Attended during 2017 - 2020</p>
+            <p>Graduated in 2021</p>
+        </div>
+        <!-- MissionReadyHQ -->
+        <div class="education-sub-section">
+            <img src="img/mrhq.jpg">
+            <p>Otago Polytechnic with MissionReadyHQ</p>
+            <p>Certificate in Technology Product Development Essentials</p>
+            <p>Full stack web development.</p>
+            <p>October 2021 - December 2021</p>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <div class="section-title" style="background-color: gainsboro;">
+            <h1>Contact</h1>
+        </div>
+
+        <!-- Email Contact Form -->
+        <div id="contact-email-form">
+            <form action="mailto:nigel.phan11@gmail.com" method="POST">
+                <!-- EMAIL SECTION HEADING -->
+                <h1 style="text-align: center;">Email Me!</h1>
+                <!-- NAME FORM-->
+                <label>Name:</label>
+                <br />
+                <input type="text" name="name" value="">
+                <br />
+                <br />
+                <!-- EMAIL FORM-->
+                <label>Email:</label>
+                <br />
+                <input type="email" name="email" value="">
+
+                <br />
+                <br />
+                <!-- DESCRIPTION FORM-->
+                <label>Description</label>
+                <br />
+                <textarea></textarea>
+                <br />
+                <input type="submit" value="Submit" style="width: 100px;">
+            </form>
+        </div>
+        <!-- Contact Icons and message -->
+        <div id="contact-more-content">
+            <h1 style="text-align: center;">More Ways to Connect</h1>
+            <p>Want to get in touch or know more?</p>
+            <p>Feel free to send a message through linkedin be sure
+                to check out my Github for more my previous projects.
+            </p>
+
+            <!-- Icon Links -->
+            <a href="https://www.linkedin.com/in/nigel-phan-b188bb191/" target="blank" id="linkedin-icon">
+                <i class="fab fa-linkedin fa-3x"></i>
+            </a>
+
+            <a href="https://github.com/nigelph" target="_blank" id="github-icon">
+                <i class="fab fa-github-square fa-3x"></i>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy 2021 Nigel Phan All rights reserved</p>
+    </footer>
+</body>
+
+</html>
