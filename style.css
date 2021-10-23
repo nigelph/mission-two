@@ -64,7 +64,7 @@ section {
 .navbar {
   display: flex;
   justify-content: center;
-  background-color: darkgray;
+  background-color: #2c4d5f;
   align-items: center;
   top: 0;
   position: initial;
@@ -76,7 +76,7 @@ section {
 }
 
 .navbar-links a {
-  color: black;
+  color: white;
   padding: 1rem;
   text-decoration: none;
   text-align: center;
@@ -84,16 +84,15 @@ section {
 }
 
 .navbar-links a:hover {
-  background-color: gray;
+  background-color: #5f95b2;
 }
 
 .nav-icon {
-  /* position: absolute; */
   display: none;
   text-decoration: none;
   flex-direction: column;
   justify-content: space-between;
-  color: black;
+  color: white;
 }
 
 /* EXPERIENCE CSS */
@@ -332,23 +331,28 @@ footer {
 @media (max-width: 600px) {
   .navbar .nav-icon {
     display: flex;
+    padding: 3%;
   }
-
+  .navbar {
+    flex-direction: column;
+    position: sticky;
+    align-items: flex-start;
+  }
   .navbar-links {
     display: none;
     width: 100%;
   }
-
-  .navbar {
-    flex-direction: column;
-    position: sticky;
-  }
   .navbar-links a {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
 }
 
 .navbar-links.active {
   display: inline-block;
+  padding: 0;
+}
+.navbar-links.collapse-nav {
+  display: none;
 }
