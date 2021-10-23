@@ -46,36 +46,54 @@ section {
   margin-right: 10%;
 }
 
-.collapsible {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+.about-website {
+  height: 200px;
+}
+#about-website-button {
+  color: green;
+}
+
+#about-website-content {
+  display: hidden;
+  color: blue;
+  transition: height 200ms;
+  height: 0;
 }
 
 /* NAVBAR CSS */
-#navbar {
+.navbar {
   display: flex;
   justify-content: center;
-  background-color: lightgray;
-  height: 100%;
+  background-color: darkgray;
+  align-items: center;
+  top: 0;
+  position: initial;
+  width: 100%;
 }
 
-#navbar a {
+.navbar-links {
+  padding: 1rem;
+}
+
+.navbar-links a {
   color: black;
-  padding: 14px 20px;
+  padding: 1rem;
   text-decoration: none;
   text-align: center;
   flex-wrap: wrap;
 }
 
-#navbar a:hover {
+.navbar-links a:hover {
   background-color: gray;
+}
+
+.nav-icon {
+  /* position: absolute; */
+  display: none;
+  text-decoration: none;
+  flex-direction: column;
+  justify-content: space-between;
+  color: black;
 }
 
 /* EXPERIENCE CSS */
@@ -309,4 +327,28 @@ footer {
     transition: 1s;
     margin-bottom: 20px;
   }
+}
+
+@media (max-width: 600px) {
+  .navbar .nav-icon {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    position: sticky;
+  }
+  .navbar-links a {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.navbar-links.active {
+  display: inline-block;
 }

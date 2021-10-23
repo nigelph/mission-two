@@ -16,12 +16,17 @@
         <p>Welcome to my personal website</p>
 
     </section>
-    <div id="navbar">
-        <a href="#about">About</a>
-        <a href="#experience">Academic Experience</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-    </div>
+    <nav class="navbar">
+        <a href="javascript:void(0)" class="nav-icon">
+            <i class="fas fa-bars fa-2x"></i>
+        </a>
+        <div class="navbar-links">
+            <a href="#about">About</a>
+            <a href="#experience">Academic Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
     <!-- About Me Section -->
     <section id="about">
@@ -53,20 +58,26 @@
                 -INSERT button to expand about me description
              -->
             <br>
-            <h1>About this Website</h1>
-            <p>This website started out as a "mission" to build a website using only HTML and CSS and has since been
-                expanded on over time. More technologies were used progressively with the the aim to make use of
-                tools taught in class by applying them. Since then, this website has become my personal page and
-                ongoing
-                project showcasing my growth and progression as a web developer.</p>
 
-            <!-- Interests section - may remove -->
-            <!-- <p>Outside of work I enjoy gaming with my friends and do indoor rock climbing, bouldering on a
-                semi-regular
-                basis.</p> -->
-            <button type="button" class="collapsable">
-                <p>About this Website</p>
-            </button>
+            <div class="about-website">
+
+                <h1>About this Website</h1>
+
+                <button type="button" id="about-website-button" onclick="collapseAbout()">
+                    <p>About this Website</p>
+                </button>
+
+                <p id="about-website-content">This website started out as a "mission" to build a website using only HTML
+                    and
+                    CSS and has
+                    since been
+                    expanded on over time. More technologies were used progressively with the the aim to make use of
+                    tools taught in class by applying them. Since then, this website has become my personal page and
+                    ongoing
+                    project showcasing my growth and progression as a web developer.</p>
+            </div>
+
+
         </div>
     </section>
 
