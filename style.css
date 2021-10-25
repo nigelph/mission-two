@@ -48,17 +48,33 @@ section {
 }
 
 .about-website {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 200px;
+  background-color: aqua;
 }
 #about-website-button {
   color: green;
 }
 
 #about-website-content {
-  display: hidden;
+  /* display: none; */
   color: blue;
-  transition: height 200ms;
-  height: 0;
+}
+
+#about-website-img-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.about-website-img-box {
+  height: 150px;
+  width: 150px;
+  background-color: lightslategrey;
+  color: white;
+  text-align: center;
+  margin-top: 2.5%;
 }
 
 /* NAVBAR CSS */
