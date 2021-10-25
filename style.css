@@ -10,13 +10,14 @@ section {
 }
 
 .header {
-  background-color: steelblue;
+  background-color: #1a2e39;
   text-align: center;
   height: 100vh;
   padding: 5%;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  color: lightcyan;
 }
 
 .mainHeadings {
@@ -76,7 +77,7 @@ section {
 }
 
 .navbar-links a {
-  color: white;
+  color: lightcyan;
   padding: 1rem;
   text-decoration: none;
   text-align: center;
@@ -255,9 +256,10 @@ textarea {
 
 footer {
   display: flex;
-  background: steelblue;
+  background: #1a2e39;
   justify-content: center;
   text-align: center;
+  color: lightcyan;
 }
 
 @media screen and (max-width: 425px) {
