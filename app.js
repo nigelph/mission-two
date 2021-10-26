@@ -1,17 +1,24 @@
 // TODO: IMPLEMENT button for extending the about section
+const aboutWebsiteButtton = document.getElementById("about-website-button");
+const aboutSection = document.getElementsByClassName("about-website")[0];
+
+function expandAbout() {
+  aboutSection.classList.toggle("expand-about");
+}
+
+aboutWebsiteButtton.addEventListener("click", expandAbout);
 
 // COLLAPSIBLE NAVBAR
 const navIcon = document.getElementsByClassName("nav-icon")[0];
 const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 
 // Expand or collapse navbar when clicking the navbar icon
-function expandNav(e) {
+function expandNav() {
   navbarLinks.classList.toggle("active");
-  console.log(e);
 }
 
 // Hide navbar after clicking a tab
-function collapseNavOnClick(e) {
+function collapseNavOnClick() {
   navbarLinks.classList.remove("active");
 }
 

@@ -48,19 +48,24 @@ section {
 }
 
 .about-website {
-  display: flex;
   flex-direction: column;
   align-items: center;
-  height: 200px;
+  height: 100%;
   background-color: aqua;
-}
-#about-website-button {
-  color: green;
+  display: none;
 }
 
-#about-website-content {
-  /* display: none; */
+.about-website p {
   color: blue;
+  font-size: 1.5vw;
+}
+#about-website-button {
+  color: #2c4d5f;
+  background: transparent;
+  border: none;
+}
+#about-website-button:hover {
+  cursor: pointer;
 }
 
 #about-website-img-container {
@@ -69,8 +74,8 @@ section {
   margin: auto;
 }
 .about-website-img-box {
-  height: 150px;
-  width: 150px;
+  height: 10vw;
+  width: 10vw;
   background-color: lightslategrey;
   color: white;
   text-align: center;
@@ -373,4 +378,8 @@ footer {
 }
 .navbar-links.collapse-nav {
   display: none;
+}
+
+.about-website.expand-about {
+  display: inline-block;
 }
