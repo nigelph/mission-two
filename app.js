@@ -66,9 +66,7 @@ function toggleOpacity(event) {
     secondText.classList.remove("show-title");
   }
 }
-
-userHover[0].addEventListener("mouseover", toggleOpacity);
-userHover[0].addEventListener("mouseout", toggleOpacity);
-
-userHover[1].addEventListener("mouseover", toggleOpacity);
-userHover[1].addEventListener("mouseout", toggleOpacity);
+for (let index = 0; index < userHover.length; index++) {
+  userHover[index].addEventListener("mouseover", toggleOpacity);
+  userHover[index].addEventListener("mouseout", toggleOpacity);
+}
