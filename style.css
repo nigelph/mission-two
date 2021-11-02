@@ -55,7 +55,6 @@ section {
   /* display: none; */
   opacity: 0;
   transition: 1s ease-in-out;
-  padding-bottom: 5%;
 }
 .about-website p {
   font-size: rem;
@@ -74,19 +73,19 @@ section {
   display: flex;
   justify-content: center;
   margin: auto;
+  position: relative;
 }
 .about-website-img-box {
   /* height: 10vw;
   width: 10vw; */
   /* max-width: 400px; */
-  font-size: 2.5vw;
-  min-width: 20vw;
-  min-height: 20vw;
-  background-color: lightslategrey;
+  font-size: 1.5vw;
+  min-width: 12.5vw;
+  min-height: 12.5vw;
   color: white;
   text-align: center;
-  margin-top: 2.5%;
-  transition: 2s ease-in-out;
+  margin: 2.5%;
+  transition: 1.5s ease-in-out;
 }
 
 /* NAVBAR CSS */
@@ -389,7 +388,33 @@ footer {
 
 .about-website.expand-about {
   /* display: inline-block; */
-
   opacity: 1;
   transition: 1s ease-in;
+}
+
+.opacity-gradient {
+  -webkit-mask: linear-gradient(#fff, transparent);
+  mask: linear-gradient(#fff, transparent);
+}
+
+.about-website-img-box-title {
+  font-size: 18px;
+  color: black;
+  display: flex;
+  /* position: absolute; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  bottom: 50%;
+  left: -25%;
+  right: 0%;
+  opacity: 0;
+  align-content: center;
+}
+
+.show-title {
+  opacity: 1;
+  font-weight: bolder;
+  font-family: sans-serif;
 }
